@@ -7,3 +7,9 @@ Enabling pytest in vs code
 2) Select 'Configure Python Tests'
 3) Select 'pytest' from the drop down at the top of the screen (NOT unittest) 
 4) Select the folder containing test files ('tests') 
+
+Troubleshooting resources: 
+
+https://www.youtube.com/watch?v=ucjRpS7WCPA
+
+https://www.youtube.com/watch?v=oiPkLyW3WwE&t=13s
