@@ -1,0 +1,9 @@
+Installing pytest 
+1) In VS code terminal: pip install pytest 
+*this is installing globally - not using virtual environment* 
+
+Enabling pytest in vs code
+1) Go to 'Testing' on the left side bar (the little potion icon? )
+2) Select 'Configure Python Tests'
+3) Select 'pytest' from the drop down at the top of the screen (NOT unittest) 
+4) Select the folder containing test files ('tests') 
