@@ -6,6 +6,8 @@
 import pytest 
 from src.calculations import add, subtract, multiply, divide
 
+# tests using fixture
+
 def test_add(sample_numbers):
     a, b = sample_numbers
     assert add(a, b) == 25
@@ -21,3 +23,21 @@ def test_multiply(sample_numbers):
 def test_divide(sample_numbers):
     a, b = sample_numbers
     assert divide(a, b) == 4
+
+# parametrized tests
+
+@pytest.mark.parametrize("a, b, expected", [(1, 2, 3), (2, 2, 4), (3, 9, 12)])
+def test_add(a, b, expected):
+    assert add(a, b) == expected
+
+@pytest.mark.parametrize("a, b, expected", [(10, 5, 5), (2, 2, 0), (22, 4, 18)])
+def test_subtract(a, b, expected):
+    assert subtract(a, b) == expected
+
+@pytest.mark.parametrize("a, b, expected", [(5, 5, 25), (2, 10, 20), (3, 9, 27)])
+def test_multiply(a, b, expected):
+    assert multiply(a, b) == expected
+
+@pytest.mark.parametrize("a, b, expected", [(2, 2, 1), (10, 2, 5), (30, 10, 3)])
+def test_divide(a, b, expected):
+    assert divide(a, b) == expected

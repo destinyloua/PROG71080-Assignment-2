@@ -25,3 +25,6 @@
 - Parameterization
     - Used to simulate different conditions for testing
     - Fixtures can be parameterized
+
+## two questions
+- would making many tests 

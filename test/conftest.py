@@ -3,6 +3,7 @@
 # PROG71080 - Introduction to Programming with Python
 # Assignment 2
 import pytest 
+from src.calculations import add
 # This is where we need top put fixtures
 # File name was specific so pytests automatically discovers it
 
