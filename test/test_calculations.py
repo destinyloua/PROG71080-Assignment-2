@@ -1,13 +1,17 @@
-# Authors: Liam Cabarle and Destiny Louangsombath
-# Date: November 30, 2025
-# PROG71080 - Introduction to Programming with Python
-# Assignment 2
-# test_calculation.py
-import pytest 
+"""
+Authors: Liam Cabarle and Destiny Louangsombath
+Date: November 30, 2025
+PROG71080 - Introduction to Programming with Python
+Assignment 2
+test_calculation.py
+
+This file contains unit tests
+"""
+
+import pytest
 from src.calculations import add, subtract, multiply, divide
 
 # tests using fixture
-
 def test_add_fixture(sample_numbers):
     a, b = sample_numbers
     assert add(a, b) == 25
@@ -24,8 +28,13 @@ def test_divide_fixture(sample_numbers):
     a, b = sample_numbers
     assert divide(a, b) == 4
 
-# parametrized tests
+# test using fixture with value error
+def test_divide_value_error_fixture(division_error_num):
+    a, b = division_error_num
+    with pytest.raises(ZeroDivisionError):
+        divide(a, b)
 
+# parametrized tests
 @pytest.mark.parametrize("a, b, expected", [(1, 2, 3), (2, 2, 4), (3, 9, 12)])
 def test_add_param(a, b, expected):
     assert add(a, b) == expected
@@ -41,3 +50,9 @@ def test_multiply_param(a, b, expected):
 @pytest.mark.parametrize("a, b, expected", [(2, 2, 1), (10, 2, 5), (30, 10, 3)])
 def test_divide_param(a, b, expected):
     assert divide(a, b) == expected
+
+# parameterized test with value error
+@pytest.mark.parametrize("a, b", [(10, 0), (5, 0), (-3, 0)])
+def test_divide_param_value_error(a, b):
+    with pytest.raises(ZeroDivisionError):
+        divide(a, b)

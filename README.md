@@ -31,7 +31,7 @@
 - Used to simulate different conditions for testing
 - Tests can be parameterized
 - Parameterized test syntax example: "@pytest.mark.parametrize("a, b, expected", [(1, 2, 3), (2, 2, 4), (3, 9, 12)])" must be included before the test is written
-
+    - Note: change variables and parameters, "("a, b, expected", [(1, 2, 3), (2, 2, 4), (3, 9, 12)]" to fit your tests 
 
 ## two questions
 - would making many tests 
