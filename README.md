@@ -33,5 +33,10 @@
 - Parameterized test syntax example: "@pytest.mark.parametrize("a, b, expected", [(1, 2, 3), (2, 2, 4), (3, 9, 12)])" must be included before the test is written
     - Note: change variables and parameters, "("a, b, expected", [(1, 2, 3), (2, 2, 4), (3, 9, 12)]" to fit your tests 
 
-## two questions
-- would making many tests 
+## Two questions 
+- insert two questions here
+
+## Brief discussion of our Python demonstration
+- We have written simple math functions (add, subtract, multiply, and divide) to write unit tests for in "calculations.py".
+- In the file "conftest.py," there are two fixtures made for testing. One fixture is for demonstrating correct arithmetic operations, and the other is for division with zero (ZeroDivisionError).
+- There are a total of 20 unit tests in our "test_calculations.py" that demonstrate the use of fixtures, and parameterized testing which were both mentioned in the podcast.
