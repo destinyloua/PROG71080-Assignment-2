@@ -1,0 +1,6 @@
+To run this project, we recommend the following: 
+1) Use VSCode as your IDE. 
+2) Select the latest version of Python when choosing your interpreter. 
+3) Install pytest (Note: this project was developed using pytest that was installed globally. If using a virtual environment, setup may differ). 
+4) We prefer to use the VSCode 'Testing' interface, accessed on the left side bar. However, it is also possible to run the tests in the terminal. 
+

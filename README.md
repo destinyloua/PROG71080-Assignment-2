@@ -34,9 +34,15 @@
     - Note: change variables and parameters, "("a, b, expected", [(1, 2, 3), (2, 2, 4), (3, 9, 12)]" to fit your tests 
 
 ## Two questions 
-- insert two questions here
+- How will testing benefit us when using Python for data analysis tasks? 
+- How will we ensure complete code coverage when developing tests for large/complex projects? 
 
 ## Brief discussion of our Python demonstration
 - We have written simple math functions (add, subtract, multiply, and divide) to write unit tests for in "calculations.py".
 - In the file "conftest.py," there are two fixtures made for testing. One fixture is for demonstrating correct arithmetic operations, and the other is for division with zero (ZeroDivisionError).
 - There are a total of 20 unit tests in our "test_calculations.py" that demonstrate the use of fixtures, and parameterized testing which were both mentioned in the podcast.
+- All 20 tests pass, which indicates that each function is behaving as expected.
+- Using proper test naming allowed us to quickly and easily run our tests, because pytest automatically recognized which functions were test functions. 
+- By using fixtures, we were able to save time by automatically populating the tests with data to be used. 
+- By using paramatized tests, we were able to run the same test(s) multiple times, using different input combinations.
+- The combination of proper test names, fixtures and parameters made the overall testing process simple, scalable and efficient.   
